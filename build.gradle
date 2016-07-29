@@ -1,0 +1,32 @@
+buildscript {
+    ext.kotlin_version = '1.0.3'
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: "kotlin"
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+version = '0.1.0'
+group = 'com.github'
+
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile group: 'com.github.salomonbrys.kotson', name: 'kotson', version: '2.3.0'
+    compile group: 'org.tukaani', name: 'xz', version: '1.5'
+    compile group: 'org.apache.commons', name: 'commons-compress', version: '1.12'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
+
+}
