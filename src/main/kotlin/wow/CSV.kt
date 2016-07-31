@@ -60,7 +60,7 @@ object Main2 {
 
         val scanner = SnapshotScanner()
         val gson = Gson()
-        val api = WowApi("gjc8xh6b32v5c7gxqappjagq6wqczrdr")
+        val api = WowApi("...")
         if (true) {
             scanner.scan("snapshots/", { snapshot ->
                 tickFile.appendln("${snapshot.tick}")
