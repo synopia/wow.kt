@@ -14,5 +14,13 @@ hs_err_pid*
 *.iml
 .idea/
 cache/
+snapshots/
+default.db/
 build/
 out/
+auctions.csv
+auction_changes.csv
+chars.csv
+data.csv
+items.csv
+ticks.csv

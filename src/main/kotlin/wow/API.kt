@@ -21,7 +21,7 @@ val REGIONS = mapOf(
         Pair("TW", "https://tw.api.battle.net/wow")
 )
 
-data class WowItem(val name: String)
+data class WowItem(val name: String?)
 
 interface RestReader {
     fun resource(api: WowApi, url: String): String
@@ -47,6 +47,7 @@ class CachedReader(val reader: RestReader) : RestReader {
             val content = reader.resource(api, url)
             file.writeText(content)
             return content
+//            return "{\"name\":\"none\"}"
         }
     }
 }

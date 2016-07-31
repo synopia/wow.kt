@@ -1,0 +1,1 @@
+auctionId:ID(Auction);itemId:IGNORE;charId:IGNORE;quantity:INT;buyout:IGNORE;bid:IGNORE;timeLeft:IGNORE

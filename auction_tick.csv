@@ -1,0 +1,2 @@
+:END_ID(Tick);:START_ID(Auction);bid:LONG;timeLeft:INT
+
